@@ -3,9 +3,9 @@ import pickle
 import streamlit as st
 
 # Load saved models
-loaded_model1 = pickle.load(open(r"C:\Users\shubh\Desktop\Final\Project 4\Diabetes_trained_model.sav", 'rb'))
-loaded_model2 = pickle.load(open(r"C:\Users\shubh\Desktop\Final\Project 4\Heart_disease_prediction.sav", 'rb'))
-loaded_model3 = pickle.load(open(r"C:\Users\shubh\Desktop\Final\Project 4\Thyroid.sav", 'rb'))
+loaded_model1 = pickle.load(open("Diabetes_trained_model.sav", 'rb'))
+loaded_model2 = pickle.load(open("Heart_disease_prediction.sav", 'rb'))
+loaded_model3 = pickle.load(open("Thyroid.sav", 'rb'))
 
 # Prediction functions
 def Diabetes_prediction(input_data):
